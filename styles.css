@@ -98,7 +98,27 @@ nav {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
+/* Logo de marca de agua sutil en el hero - lado derecho, detrás de las tarjetas */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  transform: translateY(-50%);
+  width: 65%;
+  height: 130%;
+  background-image: url('/logo-icon.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(1px);
+}
+.hero > * { position: relative; z-index: 1; }
 .hero-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
