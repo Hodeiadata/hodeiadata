@@ -52,13 +52,21 @@ nav {
   text-decoration: none;
 }
 .logo-mark {
-  width: 32px; height: 32px;
-  background: linear-gradient(135deg, var(--navy-800), var(--green-500));
-  border-radius: 8px;
-  display: grid; place-items: center;
-  color: white; font-weight: 900; font-size: 14px;
-  font-family: 'JetBrains Mono', monospace;
+  width: 38px; height: 38px;
+  background-image: url('/logo-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
 }
+.logo-text {
+  display: inline-flex;
+  align-items: baseline;
+}
+.logo-text .hode { color: var(--navy-900); }
+.logo-text .ia { color: var(--green-500); font-weight: 700; letter-spacing: 0.02em; }
+.footer-brand h3 .hode { color: var(--cream); }
+.footer-brand h3 .ia { color: var(--green-400); }
 .nav-links { display: flex; gap: 36px; align-items: center; }
 .nav-links a {
   text-decoration: none; color: var(--ink);
